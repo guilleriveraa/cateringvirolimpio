@@ -211,3 +211,36 @@
     transform: translateY(-5px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
+/* ========== VIDEO YOUTUBE RESPONSIVE ========== */
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* Ratio 16:9 para YouTube */
+    height: 0;
+    overflow: hidden;
+    margin: 2rem 0;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.video-presentacion {
+    margin: 2rem auto;
+    width: 85%;
+    max-width: 800px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .video-presentacion {
+        width: 95%;
+        margin: 1rem auto;
+    }
+}
