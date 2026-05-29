@@ -1,15 +1,14 @@
 # Dependencias
 node_modules/
-npm-debug.log
+vendor/
 
-# Variables de entorno (importante!)
+# Variables de entorno
 .env
 .env.local
 
-# Archivos del sistema
-.DS_Store
-Thumbs.db
-
-# IDE
-.vscode/
-.idea/
+# Archivos de configuración de backend
+composer.json
+composer.lock
+package.json
+package-lock.json
+server.js
