@@ -58,13 +58,20 @@
         </div>
     </section>
 
-    <!-- ========== VIDEO ALEATORIO ========== -->
+    <!-- ========== VIDEO ALEATORIO (YOUTUBE) ========== -->
 <div class="container">
     <div class="video-presentacion">
-        <video controls autoplay muted loop class="video-element" id="randomVideo">
-            <source src="img/video-presentacion.mp4" type="video/mp4">
-            Tu navegador no soporta videos HTML5.
-        </video>
+        <div class="video-wrapper">
+            <iframe id="randomVideoYT" 
+                    width="100%" 
+                    height="100%" 
+                    src="" 
+                    title="Video presentación Catering Viró"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+            </iframe>
+        </div>
     </div>
 </div>
 
@@ -349,29 +356,24 @@
         }
     </script>
     <script>
-        // ========== VIDEO ALEATORIO AL CARGAR LA PÁGINA ==========
+       // ========== VIDEO ALEATORIO DESDE YOUTUBE ==========
 document.addEventListener('DOMContentLoaded', function() {
-    // Lista de videos disponibles
+    // Lista de videos de YouTube
     const videos = [
-        { src: "Bulevar.mp4", title: "Eventos en Fincas" },
-        { src: "bulevar2.mp4", title: "Catering para Bodas" }
+        { id: "5Xq5MawH3Nk", title: "Eventos en Fincas" },
+        { id: "EUlGf9Fy54g", title: "Catering para Bodas" }
     ];
     
     // Elegir un video aleatorio
     const randomIndex = Math.floor(Math.random() * videos.length);
     const videoSeleccionado = videos[randomIndex];
     
-    // Obtener el elemento del video
-    const videoElement = document.getElementById('randomVideo');
-    const sourceElement = videoElement.querySelector('source');
+    // Obtener el iframe
+    const iframe = document.getElementById('randomVideoYT');
     
-    // Cambiar la fuente del video
-    sourceElement.src = videoSeleccionado.src;
+    // Cambiar la fuente del iframe
+    iframe.src = `https://www.youtube.com/embed/${videoSeleccionado.id}?autoplay=1&mute=1&controls=1&loop=1&playlist=${videoSeleccionado.id}`;
     
-    // Recargar el video para que funcione el nuevo source
-    videoElement.load();
-    
-    // (Opcional) Mostrar en consola cuál video se ha cargado
     console.log('Video cargado:', videoSeleccionado.title);
 });
     </script>
