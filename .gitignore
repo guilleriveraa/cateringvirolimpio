@@ -12,3 +12,6 @@ composer.lock
 package.json
 package-lock.json
 server.js
+echo "vendor/" >> .gitignore
+echo "composer.json" >> .gitignore
+echo "composer.lock" >> .gitignore
