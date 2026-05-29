@@ -1,0 +1,540 @@
+/* ========== MENÚS PAGE · ESTILO COHERENTE CON EL RESTO DE PÁGINAS ========== */
+
+/* Hero */
+.menu-hero {
+    text-align: center;
+    padding: 60px 0 40px;
+    background: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.menu-hero .section-subtitle {
+    letter-spacing: 4px;
+    font-size: 0.75rem;
+    color: #c0a070;
+}
+
+.menu-hero h1 {
+    font-size: 3rem;
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+}
+
+.menu-hero p {
+    max-width: 700px;
+    margin: 0 auto;
+    color: #555555;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Filosofía */
+.filosofia-menus {
+    padding: 60px 0;
+    background: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.filosofia-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.filosofia-item {
+    flex: 1;
+    min-width: 220px;
+    padding: 2rem;
+    background: #f5f5f5;
+    border: 1px solid #e0e0e0;
+    transition: transform 0.3s;
+}
+
+.filosofia-item:hover {
+    transform: translateY(-5px);
+}
+
+.filosofia-numero {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #c0a070;
+    margin-bottom: 0.75rem;
+    letter-spacing: 3px;
+    display: inline-block;
+}
+
+.filosofia-item h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: #1a1a1a;
+    font-weight: 500;
+}
+
+.filosofia-item p {
+    color: #555555;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* Categorías de menú */
+.menu-categoria {
+    margin: 3rem 0;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    padding: 2rem;
+    transition: all 0.3s;
+}
+
+.menu-categoria:hover {
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.03);
+}
+
+.menu-categoria-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.menu-tag {
+    display: inline-block;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #c0a070;
+    margin-bottom: 0.3rem;
+}
+
+.menu-categoria-header h3 {
+    margin-bottom: 0;
+    font-size: 1.5rem;
+    color: #1a1a1a;
+    font-weight: 500;
+}
+
+.menu-categoria-header h3 i {
+    color: #c0a070;
+    margin-right: 10px;
+}
+
+.menu-precio-base {
+    color: #c0a070;
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    background: #f5f5f5;
+    padding: 0.2rem 0.8rem;
+}
+
+/* Items del menú */
+.menu-items {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.menu-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0.5rem 0;
+    border-bottom: 1px dashed #e0e0e0;
+}
+
+.menu-item:last-child {
+    border-bottom: none;
+}
+
+.item-nombre {
+    font-weight: 600;
+    color: #1a1a1a;
+    min-width: 180px;
+    font-size: 1rem;
+}
+
+.item-desc {
+    color: #666666;
+    font-size: 0.85rem;
+    flex: 1;
+    margin-left: 1rem;
+    line-height: 1.4;
+}
+
+/* Opciones adicionales */
+.menu-opciones {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    padding-top: 0.8rem;
+    border-top: 1px solid #e0e0e0;
+    font-size: 0.8rem;
+    color: #c0a070;
+}
+
+.menu-opciones i {
+    margin-right: 6px;
+}
+
+/* Menú Regala */
+.menu-regala {
+    text-align: center;
+    background: #f5f5f5;
+    border: 1px solid #e0e0e0;
+    padding: 3rem 2rem;
+    margin: 4rem 0;
+}
+
+.menu-regala-icono {
+    font-size: 3rem;
+    color: #c0a070;
+    margin-bottom: 1rem;
+}
+
+.menu-regala h2 {
+    font-size: 2rem;
+    color: #1a1a1a;
+    border-left: none;
+    padding-left: 0;
+    margin-bottom: 0.5rem;
+}
+
+.menu-regala h3 {
+    font-size: 1.2rem;
+    color: #c0a070;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.menu-regala p {
+    color: #555555;
+    max-width: 500px;
+    margin: 0 auto 1.5rem;
+    line-height: 1.6;
+}
+
+/* Título de sección */
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #1a1a1a;
+    margin: 3rem 0 2rem;
+    border-left: none;
+    padding-left: 0;
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+}
+
+/* Menús especiales */
+.menus-especiales {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.especial-card {
+    background: #f5f5f5;
+    border: 1px solid #e0e0e0;
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.especial-card:hover {
+    transform: translateY(-5px);
+}
+
+.especial-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 1rem;
+    background: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.especial-icon i {
+    font-size: 1.8rem;
+    color: #c0a070;
+}
+
+.especial-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: #1a1a1a;
+    font-weight: 500;
+}
+
+.especial-card p {
+    color: #555555;
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.especial-precio {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #c0a070;
+    margin: 0.5rem 0;
+}
+
+.btn-link {
+    display: inline-block;
+    color: #c0a070;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.btn-link:hover {
+    color: #a08050;
+    letter-spacing: 1px;
+}
+
+/* Nota */
+.nota-menus {
+    background: #f5f5f5;
+    border-left: 3px solid #c0a070;
+    padding: 1.5rem;
+    margin: 3rem 0;
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.nota-menus i {
+    font-size: 1.5rem;
+    color: #c0a070;
+}
+
+.nota-menus strong {
+    display: block;
+    color: #1a1a1a;
+    margin-bottom: 0.25rem;
+    font-size: 0.9rem;
+}
+
+.nota-menus p {
+    color: #555555;
+    font-size: 0.85rem;
+    margin: 0;
+}
+
+/* CTA */
+.cta-menus {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: #f5f5f5;
+    border: 1px solid #e0e0e0;
+    margin: 3rem 0;
+}
+
+.cta-menus h3 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    color: #1a1a1a;
+    font-weight: 500;
+}
+
+.cta-menus p {
+    color: #555555;
+    margin-bottom: 1.5rem;
+}
+
+.cta-menus .btn {
+    padding: 12px 32px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .menu-hero h1 {
+        font-size: 2rem;
+    }
+
+    .filosofia-grid {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .filosofia-item {
+        min-width: auto;
+    }
+
+    .menu-categoria-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .menu-categoria-header h3 {
+        font-size: 1.3rem;
+    }
+
+    .menu-item {
+        flex-direction: column;
+    }
+
+    .item-desc {
+        margin-left: 0;
+        margin-top: 0.3rem;
+    }
+
+    .menu-opciones {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .menus-especiales {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-regala h2 {
+        font-size: 1.5rem;
+    }
+
+    .cta-menus h3 {
+        font-size: 1.3rem;
+    }
+}
+
+/* ========== SECCIONES DE MENÚS ========== */
+.seccion-menus {
+    margin: 4rem 0;
+}
+
+.seccion-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.seccion-header i {
+    font-size: 2.5rem;
+    color: #c0a070;
+    margin-bottom: 1rem;
+}
+
+.seccion-header h2 {
+    border-left: none;
+    padding-left: 0;
+    margin-bottom: 0.5rem;
+}
+
+.seccion-header p {
+    color: #555555;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Cards de menús para eventos */
+.menus-grid {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.menu-card {
+    background: #f5f5f5;
+    padding: 2rem;
+    width: 280px;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.menu-card:hover {
+    transform: translateY(-5px);
+}
+
+.menu-card .btn-small {
+    padding: 8px 16px;
+    font-size: 0.7rem;
+    margin-top: 1rem;
+}
+
+/* Carta del restaurante */
+.carta-restaurante {
+    text-align: center;
+    background: #f5f5f5;
+    border: 1px solid #e0e0e0;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.carta-restaurante p {
+    margin-bottom: 1rem;
+}
+
+/* Dosiers descargables */
+.dosiers {
+    background: #ffffff;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 2rem;
+}
+
+.dosiers-grid {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.dosier-card {
+    background: #f5f5f5;
+    border: 1px solid #e0e0e0;
+    padding: 2rem;
+    width: 280px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.dosier-card:hover {
+    transform: translateY(-5px);
+}
+
+.dosier-card i {
+    font-size: 3rem;
+    color: #c0a070;
+    margin-bottom: 1rem;
+}
+
+.dosier-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.dosier-card p {
+    font-size: 0.85rem;
+    color: #555555;
+    margin-bottom: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+    .menus-grid,
+    .dosiers-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-card,
+    .dosier-card {
+        width: 100%;
+        max-width: 320px;
+    }
+}

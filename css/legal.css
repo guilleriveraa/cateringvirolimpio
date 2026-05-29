@@ -1,0 +1,99 @@
+/* ========== LEGAL & COOKIES PAGES · ESTILO COHERENTE ========== */
+
+body {
+    background-color: #ffffff;
+    color: #1a1a1a;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #1a1a1a;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #1a1a1a;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border-left: 3px solid #c0a070;
+    padding-left: 1rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+    color: #1a1a1a;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+p,
+ul,
+ol,
+li {
+    color: #555555;
+}
+
+a {
+    color: #c0a070;
+}
+
+a:hover {
+    color: #a08050;
+}
+
+hr {
+    border-top: 1px solid #e0e0e0;
+}
+
+/* Tabla cookies */
+.cookies-table th {
+    background: #f5f5f5;
+    color: #1a1a1a;
+    border: 1px solid #e0e0e0;
+}
+
+.cookies-table td {
+    color: #555555;
+    border: 1px solid #e0e0e0;
+}
+
+/* Header en estas páginas también debe ser negro */
+header {
+    background-color: #0a0a0a;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo {
+    color: #ffffff;
+}
+
+.nav-links a {
+    color: #ffffff;
+}
+
+.nav-links a:hover {
+    color: #c0a070;
+}
+
+.menu-toggle {
+    color: #ffffff;
+}
+
+/* Footer */
+footer {
+    background: #0a0a0a;
+    color: #aaaaaa;
+}
+
+.footer-logo {
+    color: #ffffff;
+}
+
+.footer-social a {
+    color: #aaaaaa;
+}
+
+.footer-social a:hover {
+    color: #c0a070;
+}

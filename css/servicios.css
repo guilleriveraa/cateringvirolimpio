@@ -1,0 +1,358 @@
+/* ========== SERVICIOS PAGE · ESTILO COHERENTE CON FONDO BLANCO ========== */
+
+/* Hero */
+.servicios-hero {
+    text-align: center;
+    padding: 60px 0 40px;
+    background: #ffffff;
+}
+
+.servicios-hero h1 {
+    font-size: 3rem;
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+}
+
+.servicios-hero p {
+    max-width: 700px;
+    margin: 0 auto;
+    color: #555555;
+    font-size: 1rem;
+}
+
+/* Intro + valores */
+.intro-servicios {
+    text-align: center;
+    padding: 3rem 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.intro-servicios h2 {
+    border-left: none;
+    padding-left: 0;
+    color: #1a1a1a;
+}
+
+.intro-servicios p {
+    max-width: 700px;
+    margin: 1rem auto 0;
+    color: #555555;
+}
+
+.valores-destacados {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.valor-destacado {
+    text-align: center;
+    min-width: 180px;
+    padding: 1rem;
+}
+
+.valor-destacado i {
+    font-size: 2.5rem;
+    color: #c0a070;
+    margin-bottom: 1rem;
+}
+
+.valor-destacado h4 {
+    font-size: 1rem;
+    color: #1a1a1a;
+    margin-bottom: 0.3rem;
+    font-weight: 600;
+}
+
+.valor-destacado p {
+    font-size: 0.8rem;
+    color: #666666;
+}
+
+/* Servicio individual */
+.servicio-item {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    margin: 4rem 0;
+    padding: 2rem 0;
+    border-bottom: 1px solid #e0e0e0;
+    flex-wrap: wrap;
+}
+
+.servicio-item.reverse {
+    flex-direction: row-reverse;
+}
+
+.servicio-icono {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+}
+
+.servicio-icono i {
+    font-size: 4rem;
+    color: #c0a070;
+}
+
+.servicio-contenido {
+    flex: 2;
+}
+
+.servicio-contenido h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #1a1a1a;
+}
+
+.servicio-contenido p {
+    color: #555555;
+    margin-bottom: 1rem;
+}
+
+.servicio-caracteristicas {
+    list-style: none;
+    margin: 1rem 0;
+}
+
+.servicio-caracteristicas li {
+    margin: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    color: #555555;
+    font-size: 0.9rem;
+}
+
+.servicio-caracteristicas li::before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    color: #c0a070;
+}
+
+/* Tabla comparativa */
+.tabla-servicios {
+    margin: 4rem 0;
+    background: #f5f5f5;
+    border: 1px solid #e0e0e0;
+    padding: 2rem;
+}
+
+.tabla-servicios h2 {
+    text-align: center;
+    border-left: none;
+    padding-left: 0;
+    color: #1a1a1a;
+}
+
+.tabla-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.tabla-columna {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    padding: 1.5rem;
+}
+
+.tabla-columna h3 {
+    text-align: center;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e0e0e0;
+    color: #1a1a1a;
+}
+
+.tabla-columna ul {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.tabla-columna li {
+    padding: 0.5rem 0;
+    border-bottom: 1px dashed #e0e0e0;
+    font-size: 0.85rem;
+    color: #555555;
+}
+
+.tabla-columna li i {
+    color: #c0a070;
+    margin-right: 8px;
+    width: 20px;
+}
+
+.precio-servicio {
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #c0a070;
+}
+
+/* Proceso de trabajo */
+.proceso {
+    margin: 4rem 0;
+    text-align: center;
+}
+
+.proceso h2 {
+    color: #1a1a1a;
+}
+
+.proceso>p {
+    color: #555555;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.proceso-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.proceso-paso {
+    flex: 1;
+    min-width: 180px;
+    background: #f5f5f5;
+    border: 1px solid #e0e0e0;
+    padding: 2rem 1rem;
+    transition: transform 0.3s;
+}
+
+.proceso-paso:hover {
+    transform: translateY(-5px);
+}
+
+.paso-numero {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    border: 1.5px solid #c0a070;
+    color: #c0a070;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.proceso-paso h4 {
+    color: #1a1a1a;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.proceso-paso p {
+    font-size: 0.85rem;
+    color: #666666;
+}
+
+/* CTA contacto */
+.cta-servicios {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: #f5f5f5;
+    border: 1px solid #e0e0e0;
+    margin: 3rem 0;
+}
+
+.cta-servicios h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #1a1a1a;
+}
+
+.cta-servicios p {
+    color: #555555;
+}
+
+.cta-servicios .btn {
+    margin-top: 1rem;
+    padding: 14px 40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .servicios-hero h1 {
+        font-size: 2rem;
+    }
+
+    .servicio-item,
+    .servicio-item.reverse {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .servicio-caracteristicas li {
+        text-align: left;
+    }
+
+    .proceso-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tabla-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .valores-destacados {
+        gap: 1.5rem;
+    }
+}
+
+/* ========== CLIENTES ========== */
+.clientes {
+    text-align: center;
+    margin: 4rem 0;
+    padding: 2rem;
+    background: #f5f5f5;
+    border: 1px solid #e0e0e0;
+}
+
+.clientes h2 {
+    text-align: center;
+    border-left: none;
+    padding-left: 0;
+    margin-bottom: 2rem;
+}
+
+.clientes-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.cliente-item {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    padding: 1rem 2rem;
+    font-weight: 500;
+    color: #1a1a1a;
+    transition: all 0.3s;
+}
+
+.cliente-item:hover {
+    border-color: #c0a070;
+    transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+    .clientes-grid {
+        gap: 1rem;
+    }
+
+    .cliente-item {
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+    }
+}

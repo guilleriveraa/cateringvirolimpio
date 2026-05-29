@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title data-i18n="menu_hero_title">Menús | Catering Viró · Alta cocina para eventos</title>
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu-style.css">
+    <link rel="stylesheet" href="css/carrusel.css">
+</head>
+
+<body>
+
+    <!-- ========== HEADER ========== -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="logocatering.png" alt="Catering Viró - Logo">
+                        <span class="logo-texto">CATERING VIRÓ</span>
+                    </a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html" data-i18n="nav_inicio">Inicio</a></li>
+                    <li><a href="servicios.html" data-i18n="nav_servicios">Servicios</a></li>
+                    <li><a href="menu.html" data-i18n="nav_menus">Dossier</a></li>
+                    <li><a href="espacios.html" data-i18n="nav_espacios">Espacios</a></li>
+                    <li><a href="contacto.html" data-i18n="nav_contacto">Contacto</a></li>
+                </ul>
+                <div class="language-selector">
+                    <button class="lang-btn" data-lang="es">ES</button>
+                    <span class="lang-separator">|</span>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ========== ESPACIO 3: DOSIERES DESCARABLES ========== -->
+    <div class="container">
+        <div class="seccion-menus dosiers">
+            <div class="seccion-header">
+                <i class="fas fa-folder-open"></i>
+                <h2 data-i18n="dosiers_title">Dossiers Informativos</h2>
+                <p data-i18n="dosiers_desc">Descarga toda la información sobre nuestros servicios y espacios</p>
+            </div>
+
+            <div class="dosiers-grid">
+                <div class="dosier-card">
+                    <i class="fas fa-file-pdf"></i>
+                    <h3 data-i18n="dosier_bodas">Dossier de Bodas</h3>
+                    <p data-i18n="dosier_bodas_desc">Información completa para tu boda: menús, espacios y servicios
+                        incluidos.</p>
+                    <a href="pdf/dosierbodas.pdf" class="btn btn-small" download><i class="fas fa-download"></i> <span
+                            data-i18n="descargar_pdf">Descargar PDF</span></a>
+                </div>
+                <div class="dosier-card">
+                    <i class="fas fa-file-pdf"></i>
+                    <h3 data-i18n="dosier_corporativo">Dossier de Eventos Corporativos</h3>
+                    <p data-i18n="dosier_corporativo_desc">Propuestas para congresos, cenas de empresa y coffee breaks.
+                    </p>
+                    <a href="pdf/dosier-corporativo.pdf" class="btn btn-small" download><i class="fas fa-download"></i>
+                        <span data-i18n="descargar_pdf">Descargar PDF</span></a>
+                </div>
+                <div class="dosier-card">
+                    <i class="fas fa-file-pdf"></i>
+                    <h3 data-i18n="dosier_espacios">Dossier de Comuniones</h3>
+                    <p data-i18n="dosier_espacios_desc">Descubre todos nuestros espacios exclusivos para eventos.</p>
+                    <a href="pdf/dosier-espacios.pdf" class="btn btn-small" download><i class="fas fa-download"></i>
+                        <span data-i18n="descargar_pdf">Descargar PDF</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ========== FOOTER ========== -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Catering Viró</div>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/virogastrobar/" target="_blank" rel="noopener noreferrer"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://virogastrobar.com/" target="_blank" rel="noopener noreferrer">
+                        <img src="logocatering.png" alt="Viró" class="social-svg">
+                    </a>
+                </div>
+                <p class="footer-copy">© 2026 Catering Viró · <span data-i18n="footer_copy">Gastronomía para
+                        eventos</span> · <a href="aviso-legal.html" data-i18n="aviso_legal">Aviso legal</a> | <a
+                        href="cookies.html" data-i18n="cookies">Política de cookies</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        if (menuToggle) {
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        }
+    </script>
+    <script src="js/carrusel.js"></script>
+    <script src="js/cookies.js"></script>
+    <script src="js/translations.js"></script>
+</body>
+
+</html>
