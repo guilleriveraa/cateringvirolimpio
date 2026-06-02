@@ -1389,7 +1389,7 @@ i,
     position: relative;
     width: 100%;
     max-width: 1100px;
-    margin: 0 auto;              /* Centrado normal, sin descuadre */
+    margin: 0 auto;
     aspect-ratio: 16 / 9;
     display: block;
 }
@@ -1405,6 +1405,29 @@ i,
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
+/* ========== RESPONSIVE PARA MÓVIL ========== */
+@media (max-width: 768px) {
+    .video-presentacion {
+        margin: 1rem 0;
+    }
+    
+    .video-wrapper {
+        width: 100%;
+        max-width: 100%;
+        aspect-ratio: 16 / 9;
+    }
+    
+    .video-wrapper iframe {
+        border-radius: 12px;
+    }
+}
+
+/* Para móviles muy pequeños */
+@media (max-width: 480px) {
+    .video-wrapper {
+        aspect-ratio: 16 / 9;
+    }
+}
 /* ========== VIDEO M4V (si lo usas) ========== */
 .video-presentacion-m4v {
     margin: 2rem auto;
