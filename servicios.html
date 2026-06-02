@@ -58,17 +58,14 @@
         </div>
     </section>
 
-    <!-- ========== VIDEO ALEATORIO (YOUTUBE) ========== -->
+        <!-- ========== VIDEO PRESENTACIÓN (VIMEO - ALEATORIO) ========== -->
 <div class="container">
     <div class="video-presentacion">
         <div class="video-wrapper">
-            <iframe id="randomVideoYT" 
-                    width="100%" 
-                    height="100%" 
-                    src="" 
-                    title="Video presentación Catering Viró"
+            <iframe id="randomVideoVimeo"
                     frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
                     allowfullscreen>
             </iframe>
         </div>
@@ -345,15 +342,27 @@
             </div>
         </div>
     </footer>
-    <!-- JavaScript -->
     <script>
-        const menuToggle = document.querySelector('.menu-toggle');
-        const navLinks = document.querySelector('.nav-links');
-        if (menuToggle) {
-            menuToggle.addEventListener('click', () => {
-                navLinks.classList.toggle('active');
-            });
-        }
+     // ========== VIDEO ALEATORIO DESDE VIMEO ==========
+    document.addEventListener('DOMContentLoaded', function() {
+        // Lista de videos de Vimeo
+        const videos = [
+            { id: "1197662831", title: "Presentación Catering Viró 1" },
+            { id: "1197662834", title: "Presentación Catering Viró 2" }
+        ];
+        
+        // Elegir un video aleatorio
+        const randomIndex = Math.floor(Math.random() * videos.length);
+        const videoSeleccionado = videos[randomIndex];
+        
+        // Obtener el iframe
+        const iframe = document.getElementById('randomVideoVimeo');
+        
+        // Cambiar la fuente del iframe con los parámetros de Vimeo
+        iframe.src = `https://player.vimeo.com/video/${videoSeleccionado.id}?badge=0&autopause=0&player_id=0&app_id=58479`;
+        
+        console.log('Video de Vimeo cargado:', videoSeleccionado.title);
+    });
     </script>
     <script>
        // ========== VIDEO ALEATORIO DESDE YOUTUBE ==========
